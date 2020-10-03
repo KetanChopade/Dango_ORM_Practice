@@ -1,0 +1,55 @@
+{#<h2 align="center">For Fetching All rows and colloms</h2>#}
+{#{% for x in all %}#}
+{#<h3 align="center">#}
+{#{{ x.name }} ------ {{ x.age }} -------{{ x.gender }} <br>#}
+{#</h3>#}
+{#{% endfor %}#}
+
+{#<h2 align="center">For Fetching specific rows and columns </h2>#}
+{#{% for x in only %}#}
+{#    <h3 align="center">#}
+{#   {{ x.name }} ------ {{ x.age }}  <br>#}
+{#    </h3>#}
+{#{% endfor %}#}
+
+{#<h2 align="center">Fetch specific number of rows</h2>#}
+{#{% for x in limit %}#}
+{#    <h3 align="center">#}
+{#   {{ x.name }} ------ {{ x.age }}-------{{ x.gender }}  <br>#}
+{#    </h3>#}
+{#{% endfor %}#}
+
+{#<h2 align="center">Fetch LIMIT AND OFFSET keywords</h2>#}
+{#{% for x in limit %}#}
+{#    <h3 align="center">#}
+{#   {{ x.name }} ------ {{ x.age }}-------{{ x.gender }}  <br>#}
+{#    </h3>#}
+{#{% endfor %}#}
+
+{#<h2 align="center">Filter by single column</h2>#}
+{#{% for x in filter %}#}
+{#    <h3 align="center">#}
+{#   {{ x.name }} ------ {{ x.age }}-------{{ x.gender }}  <br>#}
+{#    </h3>#}
+{#{% endfor %}#}
+
+{#<h2 align="center">Filter by comparison operators</h2>#}
+{#{% for x in age %}#}
+{#    <h3 align="center">#}
+{#   {{ x.name }} ------ {{ x.age }}-------{{ x.gender }}  <br>#}
+{#    </h3>#}
+{#{% endfor %}#}
+
+{#<h2 align="center">Filter by BETWEEN/range Clause</h2>#}
+{#{% for x in range %}#}
+{#    <h3 align="center">#}
+{#   {{ x.name }} ------ {{ x.age }}-------{{ x.gender }}  <br>#}
+{#    </h3>#}
+{#{% endfor %}#}
+
+<h2 align="center">Filter by LIKE operator</h2>
+{% for x in contains %}
+    <h3 align="center">
+   {{ x.name }} ------ {{ x.age }}-------{{ x.gender }}  <br>
+    </h3>
+{% endfor %}
